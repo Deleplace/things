@@ -25,6 +25,8 @@ alias c="wc -l"
 alias m5="md5sum"
 alias chr=chromium-browser
 
+alias pshs="python -m SimpleHTTPServer"
+
 alias ws="cd ~/workspace"
 alias dev="cd ~/Dev"
 
@@ -53,16 +55,16 @@ alias gd="git diff"
 alias gdi="git diff --ignore-space-change"
 alias gau="git add -u"
 alias gcm="git commit -m"
+alias gpull="git pull"
 alias gpullo="git pull origin"
 alias gpullom="git pull origin master"
-alias gpull="git pull"
 alias gpush="git push"
 alias gpusho="git push origin"
+alias gpoh="git push origin HEAD"
 alias gl="git log"
 alias gch="git checkout"
 alias gchb="git checkout -b"
 alias gchm="git checkout master"
-alias gpoh="git push origin HEAD"
 
 alias gos="goapp serve"
 alias god="goapp deploy"
