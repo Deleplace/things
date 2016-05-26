@@ -22,6 +22,7 @@ alias 19="cd ~/Documents/2019"
 alias 20="cd ~/Documents/2020"
 alias h="history"
 alias c="wc -l"
+alias add="awk '{s+=\$1} END {print s}'"
 alias m5="md5sum"
 alias chr=chromium-browser
 
