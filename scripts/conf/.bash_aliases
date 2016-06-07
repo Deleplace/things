@@ -66,6 +66,7 @@ alias gl="git log"
 alias gch="git checkout"
 alias gchb="git checkout -b"
 alias gchm="git checkout master"
+alias gdhh="git diff HEAD^..HEAD"
 
 alias gos="goapp serve"
 alias god="goapp deploy"
