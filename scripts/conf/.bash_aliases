@@ -86,4 +86,4 @@ alias gsll="gsutil ls -l"
 alias gscp="gsutil cp"
 alias gsmcp="gsutil -m cp"
 alias gcu="gcloud components update"
-
+alias gssh="gcloud compute ssh"
