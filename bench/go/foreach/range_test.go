@@ -1,4 +1,4 @@
-package shift
+package foreach
 
 import (
 	"math/rand"
