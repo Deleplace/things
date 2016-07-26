@@ -12,6 +12,7 @@ func BenchmarkRange1(b *testing.B) {
 		a[i] = uint(rand.Intn(12345678))
 	}
 
+	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
 		var sum uint
 		for _, v := range a {
@@ -27,6 +28,7 @@ func BenchmarkRange2(b *testing.B) {
 		a[i] = uint(rand.Intn(12345678))
 	}
 
+	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
 		var sum uint
 		for _, v := range a {

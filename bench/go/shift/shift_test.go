@@ -13,6 +13,7 @@ func BenchmarkShift(b *testing.B) {
 	}
 	a := make([]uint, M)
 
+	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
 		copy(a, r)
 		for j := range a {
@@ -29,6 +30,7 @@ func BenchmarkDiv(b *testing.B) {
 	}
 	a := make([]uint, M)
 
+	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
 		copy(a, r)
 		for j := range a {
