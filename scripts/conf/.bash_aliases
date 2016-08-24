@@ -54,6 +54,7 @@ function mkcd(){
 alias gst="git status"
 alias gd="git diff"
 alias gdi="git diff --ignore-space-change"
+alias ga="git add"
 alias gau="git add -u"
 alias gcm="git commit -m"
 alias gpull="git pull"
