@@ -75,6 +75,7 @@ alias gsh="git show"
 alias gsta="git stash"
 alias gstaa="git stash apply"
 
+alias gocov='go test -coverprofile=/tmp/coverage.out && go tool cover -html=/tmp/coverage.out'
 alias gos="goapp serve"
 alias god="goapp deploy"
 
