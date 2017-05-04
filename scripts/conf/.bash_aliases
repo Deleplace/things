@@ -75,6 +75,8 @@ alias gdhh="git diff HEAD^..HEAD"
 alias gsh="git show"
 alias gsta="git stash"
 alias gstaa="git stash apply"
+alias gai="git add -i"
+alias gap="git add -p"
 
 alias ggu='go get -u'
 alias gocov='go test -coverprofile=/tmp/coverage.out && go tool cover -html=/tmp/coverage.out'
