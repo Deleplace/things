@@ -8,6 +8,7 @@ import (
 func BenchmarkSlice(b *testing.B) {
 	M := 1000
 	r := make([]int, M)
+	rand.Seed(123)
 	for i := range r {
 		r[i] = rand.Intn(600)
 	}
@@ -23,11 +24,13 @@ func BenchmarkSlice(b *testing.B) {
 			}
 		}
 	}
+	// log.Println("N =", b.N, "=> distinct =", distinct)
 }
 
 func BenchmarkMap(b *testing.B) {
 	M := 1000
 	r := make([]int, M)
+	rand.Seed(123)
 	for i := range r {
 		r[i] = rand.Intn(600)
 	}
@@ -41,4 +44,5 @@ func BenchmarkMap(b *testing.B) {
 		}
 		distinct += len(seen)
 	}
+	// log.Println("N =", b.N, "=> distinct =", distinct)
 }
