@@ -30,6 +30,8 @@ alias m5="md5sum"
 alias chr=chromium-browser
 alias timemem='/usr/bin/time -f "%es - %M KB"'
 alias cleantraceprofile="rm -rf /tmp/trace* /tmp/profile*"
+alias newgo="cp ~/hello.go"
+alias clip="xclip -selection clipboard"
 
 alias pshs="python -m SimpleHTTPServer"
 
