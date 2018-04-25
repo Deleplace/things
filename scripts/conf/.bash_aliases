@@ -32,6 +32,7 @@ alias timemem='/usr/bin/time -f "%es - %M KB"'
 alias cleantraceprofile="rm -rf /tmp/trace* /tmp/profile*"
 alias newgo="cp ~/hello.go"
 alias clip="xclip -selection clipboard"
+alias hey="ps aux | grep"
 
 alias pshs="python -m SimpleHTTPServer"
 
