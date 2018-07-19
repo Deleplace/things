@@ -47,6 +47,7 @@ alias freemem='sudo sync; sudo echo 3 | sudo tee /proc/sys/vm/drop_caches'
 alias t="ps aux | grep tomcat"
 alias kt="kill -9 `ps ax | grep tomcat | grep -v grep | awk '{print $1}'`"
 alias rmold="find . -mtime +5 -exec rm {} \;"
+alias caret='setterm -cursor on'
 alias sagu="sudo apt-get update"
 alias sagi="sudo apt-get install -y"
 #alias sagil="sudo apt-get install !:0"
