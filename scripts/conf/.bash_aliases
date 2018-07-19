@@ -90,6 +90,7 @@ alias ggu='go get -u'
 alias gocov='go test -coverprofile=/tmp/coverage.out && go tool cover -html=/tmp/coverage.out'
 alias gos="goapp serve"
 alias god="goapp deploy"
+alias gogo="printf \"package main\n\nimport (\n	\\\"fmt\\\"\n)\n\nfunc main() {\n	fmt.Println(\\\"Hello, playground\\\")\n}\n\" > hello.go ; mv hello.go"
 
 alias d="docker"
 alias dock="docker"
