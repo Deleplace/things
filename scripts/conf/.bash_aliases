@@ -96,6 +96,7 @@ alias gchp="git checkout -p"
 # See https://github.com/jhermsmeier/git-branch-select
 alias gbs="git branch-select"
 alias gdm="git difftool --tool=meld"
+alias br='git branch | grep -i'
 
 alias ggu='go get -u'
 alias gocov='go test -coverprofile=/tmp/coverage.out && go tool cover -html=/tmp/coverage.out'
