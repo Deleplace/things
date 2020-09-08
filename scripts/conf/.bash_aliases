@@ -126,4 +126,4 @@ alias gssh="gcloud compute ssh --zone=us-central1-f"
 alias gcelist="gcloud compute instances list"
 alias gcli="gcloud alpha interactive"
 alias gad="gcloud app deploy"
-
+alias gccsp="gcloud config set project"
