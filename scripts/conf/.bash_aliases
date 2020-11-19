@@ -127,3 +127,11 @@ alias gcelist="gcloud compute instances list"
 alias gcli="gcloud alpha interactive"
 alias gad="gcloud app deploy"
 alias gccsp="gcloud config set project"
+
+# If you are in a git repository, it will cd to the root of the git repo
+cdg(){
+  if [ "$(git rev-parse --is-inside-work-tree &>/dev/null; echo "${?}")" == '0' ]; then
+    cd $(git rev-parse --git-dir)/..
+  fi
+}
+
