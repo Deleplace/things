@@ -44,6 +44,7 @@ alias newgo="cp ~/hello.go"
 alias clip="xclip -selection clipboard"
 alias ahem="ps aux | grep"
 alias exal="exa -l"
+alias rgi="rg -i"
 
 alias pshs="python -m SimpleHTTPServer"
 
