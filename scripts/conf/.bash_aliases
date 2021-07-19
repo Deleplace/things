@@ -1,4 +1,5 @@
 alias fn="~/fn.sh"
+alias fd=fdfind
 alias trouve="~/trouve.sh"
 alias scans="cd ~/Documents/Scans"
 alias ll="ls -lisa"
