@@ -105,7 +105,10 @@ alias ggu='go get -u'
 alias gocov='go test -coverprofile=/tmp/coverage.out && go tool cover -html=/tmp/coverage.out'
 alias gos="goapp serve"
 alias god="goapp deploy"
+alias gmix='go mod init xxx'
 alias gogo="printf \"package main\n\nimport (\n	\\\"fmt\\\"\n)\n\nfunc main() {\n	fmt.Println(\\\"Hello, playground\\\")\n}\n\" > hello.go ; mv hello.go"
+alias gotest='printf "package xxx\n\nimport \"testing\"\n\nfunc TestX(t *testing.T) {\n	t.Error("TODO")\n}\n" > hello_test.go ; mv hello_test.go'
+alias gobench='printf "package bench\n\nimport \"testing\"\n\nfunc TestX(t *testing.T) {\n	//t.Error(\"TODO\")\n}\n\nfunc BenchmarkX(b *testing.B) {\n	for i := 0; i < b.N; i++ {\n		//\n	}\n}\n" > hello_test.go ; mv hello_test.go'
 
 alias d="docker"
 alias dock="docker"
