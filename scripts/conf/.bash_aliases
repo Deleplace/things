@@ -66,6 +66,8 @@ alias sagu="sudo apt-get update"
 alias sagi="sudo apt-get install -y"
 #alias sagil="sudo apt-get install !:0"
 #alias sagil="sudo apt-get install -y \$_"
+alias code.="code ."
+alias c.="code ."
 
 alias wo='wget -O- '
 
