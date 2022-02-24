@@ -49,7 +49,7 @@ alias ahem="ps aux | grep"
 alias exal="exa -l"
 alias rgi="rg -i"
 
-alias pshs="python -m SimpleHTTPServer"
+alias pshs='python -m http.server'
 
 alias ws="cd ~/workspace"
 alias dev="cd ~/Dev"
