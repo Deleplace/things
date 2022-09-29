@@ -104,7 +104,9 @@ alias gchp="git checkout -p"
 alias gbs="git branch-select"
 alias gdm="git difftool --tool=meld"
 alias br='git branch | grep -i'
-ghrcd() { gh repo clone "Deleplace/$1" }
+ghrcd() { 
+  gh repo clone "Deleplace/$1"
+}
 
 alias ggu='go get -u'
 alias gocov='go test -coverprofile=/tmp/coverage.out && go tool cover -html=/tmp/coverage.out'
