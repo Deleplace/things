@@ -105,7 +105,7 @@ alias gbs="git branch-select"
 alias gdm="git difftool --tool=meld"
 alias br='git branch | grep -i'
 ghrcd() { 
-  gh repo clone "Deleplace/$1"
+  gh repo clone "Deleplace/$1" && cd "$1"
 }
 
 alias ggu='go get -u'
