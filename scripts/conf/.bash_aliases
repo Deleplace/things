@@ -117,6 +117,7 @@ alias gogo="printf \"package main\n\nimport (\n	\\\"fmt\\\"\n)\n\nfunc main() {\
 alias gotest='printf "package xxx\n\nimport \"testing\"\n\nfunc TestX(t *testing.T) {\n	t.Error("TODO")\n}\n" > hello_test.go ; mv hello_test.go'
 alias gobench='printf "package bench\n\nimport \"testing\"\n\nfunc TestX(t *testing.T) {\n	//t.Error(\"TODO\")\n}\n\nfunc BenchmarkX(b *testing.B) {\n	for i := 0; i < b.N; i++ {\n		//\n	}\n}\n" > hello_test.go ; mv hello_test.go'
 alias gtpp='go tool pprof -http :6060'
+alias gtt='go tool trace -http :7070'
 alias gov="go version"
 alias sc=staticcheck
 
