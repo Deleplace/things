@@ -39,6 +39,7 @@ alias o.="xdg-open ."
 alias x="chmod +x"
 alias gzipc="gzip | wc -c"
 alias add="awk '{s+=\$1} END {print s}'"
+alias avg="awk '{s+=\$1 ; count+=1} END {print (s/count)}'"
 alias m5="md5sum"
 alias chr=chromium-browser
 alias timemem='/usr/bin/time -f "%es - %M KB"'
