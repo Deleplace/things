@@ -145,7 +145,8 @@ alias gcelist="gcloud compute instances list"
 alias gcli="gcloud alpha interactive"
 alias gad="gcloud app deploy"
 alias gccsp="gcloud config set project"
-alias gconfigs='gcloud config configurations list'
+alias gconfigs="gcloud config configurations list"
+alias gccca="gcloud config configurations activate"
 
 # If you are in a git repository, it will cd to the root of the git repo
 cdg(){
