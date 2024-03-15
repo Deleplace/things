@@ -147,6 +147,8 @@ alias gad="gcloud app deploy"
 alias gccsp="gcloud config set project"
 alias gconfigs="gcloud config configurations list"
 alias gccca="gcloud config configurations activate"
+alias gcaadl="gcloud auth application-default login"
+alias gcaadr="gcloud auth application-default revoke"
 
 # If you are in a git repository, it will cd to the root of the git repo
 cdg(){
