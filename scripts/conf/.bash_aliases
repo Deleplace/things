@@ -3,6 +3,7 @@ alias fd=fdfind
 alias trouve="~/trouve.sh"
 alias scans="cd ~/Documents/Scans"
 alias ll="ls -lisa"
+alias ls1='ls -1'
 alias grepi="grep -i"
 alias grev="grep -v"
 alias grevi="grep -i -v"
