@@ -162,8 +162,8 @@ cdg(){
 # Switch to the git branch having this fragment in its name
 function gbr(){
   fragment="$1"
-  branches=$(git branch | grep "$1" | tr "*+" "  ")
-  n=$(git branch | grep -c "$1")
+  branches=$(git branch | grep -i "$1" | tr "*+" "  ")
+  n=$(git branch | grep -i -c "$1")
   if [[ "$n" == "0" ]] ; then
     echo No branch matches \"$fragment\"
   elif [[ "$n" == "1" ]] ; then
