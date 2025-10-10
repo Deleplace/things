@@ -152,6 +152,8 @@ alias gccca="gcloud config configurations activate"
 alias gcaadl="gcloud auth application-default login"
 alias gcaadr="gcloud auth application-default revoke"
 
+alias gemi="gemini -a"
+
 # If you are in a git repository, it will cd to the root of the git repo
 cdg(){
   if [ "$(git rev-parse --is-inside-work-tree &>/dev/null; echo "${?}")" == '0' ]; then
