@@ -165,15 +165,18 @@ cdg(){
 function gbr(){
   fragment="$1"
   branches=$(git branch | grep -i "$1" | tr "*+" "  ")
-  n=$(git branch | grep -i -c "$1")
+  n=$(git branch | grep -i -c "$fragment")
   if [[ "$n" == "0" ]] ; then
     echo No branch matches \"$fragment\"
-  elif [[ "$n" == "1" ]] ; then
-    branch=$(echo "$branches" | xargs)
-    git checkout $branch
-  else
+    return 1
+  fi
+  if [[ $n -gt 1 ]] ; then
     echo "$n branch names match:"
     echo "$branches"
+    return 1
   fi
+  # Exactly one branch matches
+  branch=$(echo "$branches" | xargs)
+  git checkout $branch
 }
 
